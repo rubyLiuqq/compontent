@@ -1,0 +1,79 @@
+{
+  "name": "component",
+  "version": "1.0.0",
+  "description": "component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "./dev/bin/start create",
+    "start": "./dev/bin/start dev"
+  },
+  "author": "rubyliu",
+  "license": "MIT",
+  "config": {
+    "port": 8090
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "css-loader": "^0.23.1",
+    "ejs": "^2.5.2",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb-base": "^5.0.0",
+    "eslint-loader": "^1.4.0",
+    "eslint-plugin-import": "^1.10.2",
+    "express": "^4.14.0",
+    "glob": "^7.1.1",
+    "html-webpack-plugin": "^2.21.0",
+    "khaos": "^0.9.3",
+    "moment": "^2.15.1",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "glob": "^7.1.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "parser": "babel-eslint"
+    },
+    "settings": {
+      "import/resolver": {
+        "custom-alias": {
+          "alias": {
+            "@": "./src"
+          },
+          "extensions": [
+            ".js",
+            ".json",
+            ".jsx",
+            ".ts",
+            ".tsx",
+            ".vue"
+          ]
+        }
+      }
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "airbnb-base"
+    ],
+    "rules": {
+      "max-len": 0
+    }
+  },
+  "browserslist": [
+    "> 2% in CN",
+    "last 2 versions",
+    "last 3 ie versions"
+  ]
+}

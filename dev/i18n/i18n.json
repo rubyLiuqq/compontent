@@ -1,0 +1,22 @@
+{
+  "config": {
+    "usage": "<command> [options]",
+    "create": {
+      "desc": "Generate a new module from template for the project.",
+      "installing": "正在创建...",
+      "properties": {
+        "name": "模块名",
+        "moduleCHName": "模块中文名",
+        "moduleDesc": "模块描述",
+        "sure": "确定要创建该组件吗?"
+      },
+      "success": "模块创建成功",
+      "fail": "模块创建失败"
+    }
+  },
+  "errors": {
+    "cwd": "找不到 package.json，请确保你位于项目根目录下",
+    "projectName": "请输入正确的模块名称(小驼峰命名),模块名不能与当前已有模块重名",
+    "dirExists": "目录已存在"
+  }
+}
