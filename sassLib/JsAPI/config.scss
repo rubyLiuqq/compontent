@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+// 颜色参考 Element
+
+// 辅助色
+$blue: #409EFF;
+$hoverBlue: #66b1ff;
+$activeBlue: #3a8ee6;
+$blueSimpleBg: #ecf5ff;
+$blueSimpleBorder: #b3d8ff;
+
+$success: #67C23A;
+$hoverSuccess: #85ce61;
+$activeSuccess: #5daf34;
+$successSimpleBg: #f0f9eb;
+$successSimpleBorder: #c2e7b0;
+
+$warning: #E6A23C;
+$hoverWarning: #ebb563;
+$activeWarning: #cf9236;
+$warningSimpleBg: #fdf6ec;
+$warningSimpleBorder: #f5dab1;
+
+$danger: #F56C6C;
+$hoverDanger: #f78989;
+$activeDanger: #dd6161;
+$dangerSimpleBg: #fef0f0;
+$dangerSimpleBorder: #fbc4c4;
+
+$info: #909399;
+$hoverInfo: #a6a9ad;
+$activeInfo: #82848a;
+$infoSimpleBg: #f4f4f5;
+$infoSimpleBorder: #d3d4d6;
+
+$disable: #e6e6e6;
+$disableBg: #dcdfe6;
+$textDisabled: #ababab;
+$disableBorder: #dcdfe6;
+
+// 文字颜色
+$textImprotanr: #303133;
+$textDefault: #606266;
+$textNext: #909399;
+$textLittle: #C0C4CC;
+$textdanger: #F56C6C;
+
+
+
+$gray1: #606266;
+$gray2: #909399;
+$gray3: #ababab;
+$gray4: #C0C4CC;
+
+// 新规则
+$default: rgba(0, 0, 0, 0.65);
+$important: rgba(0, 0, 0, 0.85);
+
+// 边框
+$borderImportant: #DCDFE6;
+$borderDefault: #E4E7ED;
+$borderNext: #EBEEF5;
+$borderLittle: #F2F6FC;
+
+$borderDefaultHover: #c6e2ff;
+$borderDefautActive: #3a8ee6;
+
+// 背景
+$defaultHoverBg: #ecf5ff;
+
+$font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+// 字体使用规范
+// 主题
+$mainTitle: 20px;
+$extraLarge: 20px;
+// 标题
+$title: 18px;
+$large: 18px;
+// 小标题
+$littleTitle: 16px;
+$medium: 16px;
+// 正文
+$text: 14px;
+$small: 14px;
+// 正文（小）
+$smallText: 13px;
+$extraSmall: 13px;
+// 辅助文字
+$extraExtraSmall: 12px;
+
+

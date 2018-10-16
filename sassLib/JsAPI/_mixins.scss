@@ -1,0 +1,51 @@
+@import 'config';
+
+@mixin disabled($bgColor: $disable, $textColor: $textDisabled){
+  background-color: $bgColor !important;
+  color: $textColor !important;
+  border-color: $bgColor !important;
+  cursor: not-allowed !important;
+}
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+@mixin ellipsis($width: 100%) {
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin float($float: left) {
+  float: $float;
+}
+
+@mixin button {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+  transform: all 0.3s;
+  user-select: none;
+  font-weight: 400;
+  color: $default;
+  background-color: #fff;
+  border-color: $gray2;
+  cursor: pointer;
+}

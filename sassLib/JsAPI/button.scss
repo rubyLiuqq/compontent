@@ -1,0 +1,141 @@
+@import 'mixins';
+
+.btn {
+  @include button;
+  font-size: 14px;
+  width: 98px;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &.primary {
+    background-color: $blue;
+    border-color: $blue;
+    color: #fff;
+
+    &:hover{
+      color: #fff;
+      background-color: $hoverBlue;
+      border-color: $hoverBlue;
+    }
+
+    &:active{
+      color: #fff;
+      background-color: $activeBlue;
+      border-color: $activeBlue;
+    }
+
+    &.plain {
+      background-color: $blueSimpleBg;
+      border-color: $blueSimpleBorder;
+      color: $blue;
+
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+        border-color: $blue;
+      }
+
+      &:active {
+        background-color: $activeBlue;
+        color: #fff;
+        border-color: $activeBlue;
+      }
+    }
+  }
+
+  &.default {
+    background-color: $defaultHoverBg;
+    color: $default;
+    border-color: $borderDefault;
+
+    &:hover {
+      color: $blue;
+      border-color: $hoverBlue;
+    }
+    &:active {
+      color: $activeBlue;
+      border-color: $activeBlue;
+    }
+  }
+
+  &.success {
+    background-color: $success;
+    color: #fff;
+    border-color: $success;
+
+    &:hover {
+      background-color: $hoverSuccess;
+      border-color: $hoverSuccess;
+    }
+    &:active {
+      background-color: $activeSuccess;
+      border-color: $activeSuccess;
+    }
+  }
+
+  &.warning {
+    background-color: $warning;
+    color: #fff;
+    border-color: $warning;
+
+    &:hover {
+      background-color: $hoverWarning;
+      border-color: $hoverWarning;
+    }
+    &:active {
+      background-color: $activeWarning;
+      border-color: $activeWarning;
+    }
+  }
+
+  &.danger {
+    background-color: $danger;
+    color: #fff;
+    border-color: $danger;
+
+    &:hover {
+      background-color: $hoverDanger;
+      border-color: $hoverDanger;
+    }
+    &:active {
+      background-color: $activeDanger;
+      border-color: $activeDanger;
+    }
+  }
+
+  &.info {
+    background-color: $info;
+    color: #fff;
+    border-color: $info;
+
+    &:hover {
+      background-color: $hoverInfo;
+      border-color: $hoverInfo;
+    }
+    &:active {
+      background-color: $activeInfo;
+      border-color: $activeInfo;
+    }
+  }
+
+  &.info {
+    background-color: $info;
+    color: #fff;
+    border-color: $info;
+
+    &:hover {
+      background-color: $hoverInfo;
+      border-color: $hoverInfo;
+    }
+    &:active {
+      background-color: $activeInfo;
+      border-color: $activeInfo;
+    }
+  }
+
+  &.disabled {
+    @include disabled;
+  }
+}
