@@ -1,3 +1,6 @@
+/**
+ * Created by zhuqiacheng on 2016/10/8.
+ */
 'use strict';
 
 const fs = require('fs');
@@ -49,9 +52,8 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.get('/', (req, res) => {
-  const pages = glob.sync('*/example/index.html', {
+  const pages = glob.sync('*/JsAPI/example/index.html', {
     cwd: path.join(__dirname, '../../')
   });
   const names = pages.map((val) => {
@@ -59,13 +61,13 @@ app.get('/', (req, res) => {
     return path.dirname(dir)
   });
 
-  res.render('index', {
+  res.render('home', {
     names: names || [],
     pages: pages || []
   })
 });
 
-app.get('/*/example/index.html', (req, res) => {
+app.get('/*/JsAPI/example/index.html', (req, res) => {
   const filePath = path.join(__dirname, '../../', req.originalUrl);
   const file = fs.readFileSync(filePath);
   res.set('Content-Type', 'text/html');
@@ -91,4 +93,3 @@ app.listen(port, host, () => {
 
   opn(url);
 });
-

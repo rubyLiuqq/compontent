@@ -11,7 +11,7 @@
   "author": "rubyliu",
   "license": "MIT",
   "config": {
-    "port": 8090
+    "port": 8091
   },
   "devDependencies": {
     "co": "^4.6.0",
@@ -20,6 +20,7 @@
     "commander": "^2.9.0",
     "css-loader": "^0.23.1",
     "ejs": "^2.5.2",
+    "escope": "^3.6.0",
     "eslint": "^3.1.1",
     "eslint-config-airbnb-base": "^5.0.0",
     "eslint-loader": "^1.4.0",
@@ -28,14 +29,25 @@
     "glob": "^7.1.1",
     "html-webpack-plugin": "^2.21.0",
     "khaos": "^0.9.3",
+    "less-loader": "^4.1.0",
     "moment": "^2.15.1",
     "node-sass": "^3.13.0",
+    "opn": "^5.4.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
-    "glob": "^7.1.3"
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "babel-eslint": "^10.0.1",
+    "es5-shim": "^4.5.12",
+    "husky": "^1.1.2",
+    "inquirer": "^6.2.0",
+    "jquery": "^3.3.1",
+    "underscore": "^1.9.1"
   },
   "eslintConfig": {
     "root": true,
@@ -63,10 +75,6 @@
         }
       }
     },
-    "extends": [
-      "plugin:vue/essential",
-      "airbnb-base"
-    ],
     "rules": {
       "max-len": 0
     }

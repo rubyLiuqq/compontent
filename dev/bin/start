@@ -23,7 +23,7 @@ program
   .command('dev')
   .description('Launch server.')
   .action(() => {
-    require('./start');
+    require('../server/start');
   });
 
 const argv = process.argv;

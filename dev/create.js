@@ -8,7 +8,6 @@ const { promptQuestion, tips, i18n, isConform } = require('./config');
 const template = path.join(__dirname, './template');
 const cwd = process.cwd();
 
-console.log(template);
 
 module.exports = (name) => {
 
@@ -19,7 +18,6 @@ module.exports = (name) => {
       promptQuestion.basic.moduleDesc,
       promptQuestion.basic.sure
     ]).then((answers) => {
-
       co(function* () {
         const khaos = new Khaos(template);
 

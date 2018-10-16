@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const glob = require('glob');
 const HotModuleReplacementPlugin = webpack.HotModuleReplacementPlugin;
-const fileList = glob.sync('*/example/index.js', {
+const fileList = glob.sync('*/JsAPI/example/index.js', {
   cwd: path.join(__dirname, '../../')
 });
 var entry = {};
