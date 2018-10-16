@@ -53,11 +53,11 @@ module.exports = {
     new HotModuleReplacementPlugin()
   ],
   devServer: {
+    publicPath: '/',
     hot: true,
     noInfo: false,
     inline: true,
     reload: true,
-    publicPath: '/',
     watchOptions: {
       aggregateTimeout: 300,
       poll: true

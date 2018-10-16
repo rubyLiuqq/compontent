@@ -8,9 +8,8 @@ const opn = require('opn');
 const glob = require('glob');
 const path = require('path');
 const express = require('express');
-const colors = require('colors');
 const webpack = require('webpack');
-// load local modules
+
 const pkg = require('../../package.json');
 const webpackConf = require('./webpack.config');
 const port = pkg.config.port || 8000;
@@ -33,22 +32,7 @@ app.set("view options", {
 
 app.set('views', __dirname + '/');
 
-colors.setTheme({
-  silly: 'rainbow',
-  input: 'grey',
-  verbose: 'cyan',
-  prompt: 'grey',
-  info: 'green',
-  data: 'grey',
-  help: 'cyan',
-  warn: 'yellow',
-  debug: 'blue',
-  error: 'red'
-});
-
-//logger
 app.use((req, res, next) => {
-  console.log(req.method.info, req.originalUrl);
   next();
 });
 
@@ -80,16 +64,12 @@ app.use(webpackHotMiddleware(compiler, {
   log: console.log
 }));
 
-//error handle
 app.use((err, req, res, next) => {
-  console.error(err.stack);
   res.status(500).send('Something broke!');
 });
 
 app.listen(port, host, () => {
   let url = `http://127.0.0.1:${port}`;
-
   console.log(`Listening at ${url}`);
-
   opn(url);
 });
