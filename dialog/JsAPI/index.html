@@ -1,0 +1,18 @@
+<div class="mask">
+  <div class="dialog">
+    <div class="title">
+      <div class="title-text"><%= data.title %></div>
+      <div class="dialog-close <%= data.hasClose ? '' : 'hide' %>"></div>
+    </div>
+    <div class="content">
+      <div class="content-warp"></div>
+    </div>
+    <% if (data.bottons) { %>
+    <div class="bottom">
+      <% data.buttons.forEach(function(btn) { %>
+        <div class="bottom-btn <%= btn.type %>"><%= btn.text %></div>
+      <% }) %>
+    </div>
+    <% } %>
+  </div>
+</div>
